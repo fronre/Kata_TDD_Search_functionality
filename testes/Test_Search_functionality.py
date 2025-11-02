@@ -1,3 +1,6 @@
 def test():
- Serach_functionalty()
+    Search_functionality()
 
+
+def Search_functionality():
+    pass
