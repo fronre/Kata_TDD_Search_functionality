@@ -1,3 +1,2 @@
-def Serach_function():
+def search_cities():
     pass
-

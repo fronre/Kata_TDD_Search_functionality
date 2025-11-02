@@ -1,3 +1,4 @@
-from src.Search_functionality import Serach_function
-def test_search():
-    Serach_function()
+from src.Search_functionality import search_cities
+
+def test_search_empty():
+    assert search_cities("") == []
