@@ -1,12 +1,13 @@
 def search_cities(search_text: str) -> list:
-    cities = ["barchalna", "barsd", "bars"]
+    cities = ["barcelona", "barsd", "bars", "paris"]
 
     if len(search_text) < 2:
         return []
 
+    search_text = search_text.lower()
+
     result = []
     for city in cities:
-        if city.lower().startswith(search_text.lower()):
+        if search_text in city.lower():
             result.append(city)
     return result
-

@@ -8,3 +8,6 @@ def test_search_text_inside_word_should_fail_initially():
 
 def test_search_no_match_returns_empty():
     assert search_cities("zzz") == []
+
+def test_search_match_at_end_of_word():
+    assert search_cities("ris") == ["paris"]
