@@ -9,3 +9,4 @@ def search_cities(search_text: str) -> list:
         if city.lower().startswith(search_text.lower()):
             result.append(city)
     return result
+
