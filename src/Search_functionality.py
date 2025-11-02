@@ -6,6 +6,6 @@ def search_cities(search_text: str) -> list:
 
     result = []
     for city in cities:
-        if city.startswith(search_text):
+        if city.lower().startswith(search_text.lower()):
             result.append(city)
     return result
