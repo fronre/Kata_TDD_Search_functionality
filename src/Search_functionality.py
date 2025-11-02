@@ -13,7 +13,6 @@ def search_cities(search_text: str) -> list:
     if len(search_text) < 2:
         return []
 
-
     result = []
     for city in cities:
         if search_text.lower() in city.lower():
