@@ -1,4 +1,4 @@
 from src.Search_functionality import search_cities
 
-def test_short_text_returns_empty():
-    assert search_cities("b") == []
+def test_search_with_different_case_should_fail_initially():
+    assert search_cities("Ba") == ["barchalna", "barsd", "bars"]
