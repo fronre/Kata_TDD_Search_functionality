@@ -7,11 +7,12 @@ def search_cities(search_text: str) -> list:
 
     search_text = search_text.strip()
 
+    if search_text == "*":
+        return cities
+
     if len(search_text) < 2:
         return []
 
-    if search_text == "*":
-        return cities
 
     result = []
     for city in cities:
